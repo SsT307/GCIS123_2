@@ -1,0 +1,4 @@
+pop --> stack
+
+first in last out == stack
+first in first out == queue 
