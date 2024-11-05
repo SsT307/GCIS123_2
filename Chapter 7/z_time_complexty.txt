@@ -1,0 +1,7 @@
+2+ For Loops, nested for loop - 0(n^2)
+
+
+1 For Loop - o(n)
+
+
+discard half of the array - log2(n)

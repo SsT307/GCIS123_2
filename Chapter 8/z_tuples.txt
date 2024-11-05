@@ -1,0 +1,21 @@
+Tuples are immutable
+
+Can store any type of value
+
+List = []
+Tuple = ()
+
+Tuples have indexes
+Tuple are immutable
+If you print a tuple, it will print it out like it does with the array
+
+
+tuple(value) = only one value, it splits each character and makes a tuple
+list(value) = same thing ^^
+
+
+
+append = adds values to the end
+insert = adds values to the middle ("where you want to insert it", "what you want to insert")
+
+

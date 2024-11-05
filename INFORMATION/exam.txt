@@ -1,0 +1,5 @@
+- No code questions in the quizzes, or final
+
+- How to do merge sort algorithm
+
+- What is time complexity

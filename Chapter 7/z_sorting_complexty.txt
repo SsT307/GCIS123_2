@@ -1,0 +1,4 @@
+split = O(n)
+
+t(n) = O(log2(n))
+

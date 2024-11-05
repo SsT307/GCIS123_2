@@ -1,0 +1,3 @@
+In place = original array is destoryed
+
+Out place = creates a new space for array
