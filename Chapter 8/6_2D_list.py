@@ -25,9 +25,7 @@ target = 10
 def target_in_2d(list, target):
     for i in list:
         for j in i:
-            if i == target:
-                print('Target found in index')
-            else:
-                continue
+            if j == target:
+                print(f'The target {target} is found at index ({i},{j})')
                 
 target_in_2d(ls_2d, target)
