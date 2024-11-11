@@ -14,12 +14,11 @@ def generate_sort_data(data):
         odd_ind = []
         even_ind = []
         ''' Split array into odd and even index parts '''
-        
-        for i in data:
+        for i in range(0,len(data)):
             if i%2 == 0:
-                even_ind.insert(data[i],0)
+                even_ind.append(data[i])
             else:
-                odd_ind.insert(data[i],0)
+                odd_ind.append(data[i])
         
         ''' Recursive calls for sorting the odd and even indexes '''
         generate_sort_data(odd_ind) # Split odd indexes
@@ -49,7 +48,8 @@ def generate_sort_data(data):
             k += 1
 
 ''' Gets an array, with the first 10 elements set, and adds an array to it with 990 elements with random numbers from 1-100 '''
-large_data = [55, 22, 89, 34, 67, 90, 15, 72, 39, 44] + [random.randint(1, 100) for _ in range(990)]
+# large_data = [55, 22, 89, 34, 67, 90, 15, 72, 39, 44] + [random.randint(1, 100) for _ in range(990)]
+large_data = [55, 22, 89, 34, 67, 90, 15, 72, 39, 44]
 ''' Runs the function to sort the large dataset '''
 generate_sort_data(large_data)
 ''' Prints out the sorted data, it still uses the original variable for the data because its an in-place sort, meaning it destroyed the original array '''

@@ -11,9 +11,15 @@ either in acending or decending order
     
 def generate_sort_data(data):
     if len(data)>1:
+        odd_ind = []
+        even_ind = []
         ''' Split array into odd and even index parts '''
-        odd_ind = data[1::2] # ODD INDEXES, from 1-end, with step 2 (skipping the even indexes)
-        even_ind = data[::2] # EVEN INDEXES, from beginning-end, with step 2 (skipping the odd indexes)
+        
+        for i in range(0,len(data)):
+            if i%2 == 0:
+                even_ind.append(data[i])
+            else:
+                odd_ind.append(data[i])
         
         ''' Recursive calls for sorting the odd and even indexes '''
         generate_sort_data(odd_ind) # Split odd indexes

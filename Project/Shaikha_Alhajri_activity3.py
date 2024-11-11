@@ -3,87 +3,99 @@ Activity 3, Group 6
 Students: Shaikha Alhajri, Fatma Alsuwaidi, Fatma Almadani, Iliazya Alattar, Noha Abou Karnib
 This activity guides us through a structured search and sort process, where each phase builds on the previous one.
 """
+
 import random
 import time
 
 
-
-"""Phase 1"""
-def insertion_sort(arr):
+# Phase 1
+def recursive_insertion_sort(arr, index):
     """
-    Sorts a given array using the insertion sort algorithm.
+    Recursively sort an array using the Insertion Sort algorithm without using 'key' or slicing.
     Parameters:
-        arr (list): A list of integers to be sorted.
+    arr (list): The list to be sorted.
+    index (int): The index of the last element to be considered for sorting.
     Returns:
-        list: A sorted version of the input array.
+    The sorted list.
     """
-    '''Start from the second element'''
-    for i in range(1, len(arr)):  # Start from the second element
-        key = arr[i]  # Element to be inserted in the sorted portion of the array
-        j = i - 1  # Index for comparing the key with the sorted portion of the array
-        # Move elements of arr[0..i-1] that are greater than the key, to one position ahead
-        while j >= 0 and arr[j] > key:
-            arr[j + 1] = arr[j]  # Shift element to the right
-            j -= 1  # Move left
-        arr[j + 1] = key  # Place the key in its correct position
-    return arr  # Return the sorted array
-def generate_sorted_data(size):
-    """
-    Generates a list of random integers, sorts it using insertion sort, and returns the sorted list.
-    Parameters:
-        size (int): The number of elements to generate in the array.
-    Returns:
-        list: The sorted list of randomly generated integers.
-    """
-    data = [random.randint(1, 100) for i in range(size)]  # Generate random integers between 1 and 100
-    sorted_data = insertion_sort(data)  # Sort the random data using insertion sort
-    return sorted_data  # Return the sorted data
-# Initial small dataset
-small_data = [34, 7, 23, 32, 5, 62, 29, 12, 40, 8]
-# Sort the small dataset using insertion sort (we use copy to keep the original data unchanged)
-sorted_small_data = insertion_sort(small_data)  
-# Print the result
+    # Base case: if index is 0, the array is already sorted
+    if index == 0:
+        return arr
+    # Recursively sort the first index-1 elements of the array
+    recursive_insertion_sort(arr, index - 1)
+    # Get the current element (this will be the one we need to "insert")
+    current_element = arr[index]  
+    i = index - 1  # Start checking from the element before 'current_element'
+    # Move elements of arr (the part before the current element) that are greater than current_element
+    while i >= 0 and arr[i] > current_element:
+        arr[i + 1] = arr[i]  # Shift arr[i] one position to the right
+        i -= 1  # Move to the previous element
+    # Insert the current element at its correct position
+    arr[i + 1] = current_element
+    # Return the sorted array
+    return arr
+# Example usage with a small list of numbers
+small_data = [random.randint(1, 100) for _ in range(10)]
+# Sort the small_data list using the recursive insertion sort
+sorted_small_data = recursive_insertion_sort(small_data, len(small_data) - 1)
+# Print the sorted list
 print("Sorted small_data:", sorted_small_data)
 
 
-"""Phase 2"""
-data = [5, 7, 8, 12, 23, 29, 32, 34, 40, 62]
-def binary_search(data, target):
+
+# Phase 2
+def binary_search(arr, target, start, end):
     """
-    Performs a binary search on a sorted array to find the index of the target value.
+    Perform a binary search to find the index of the target element in a sorted array.
     Parameters:
-        data (list): The sorted array to search in.
-        target (int): The value to search for in the array.
+    arr (list): A sorted list of elements to search.
+    target (int): The element to find in the list.
+    start (int): The starting index of the search range.
+    end (int): The ending index of the search range.
     Returns:
-        int: The index of the target value if found, None if not found.
+    The index of the target element if found, otherwise None.
     """
-    low = 0
-    high = len(data) - 1
-    while low <= high:
-        mid = (low + high) // 2
-        if data[mid] == target:
-            return mid
-        elif data[mid] < target:
-            low = mid + 1
-        else:
-            high = mid - 1
-    return None
-# Sample Target (only one target is given as per Phase 2)
-target = 23  # You can change this to test other targets
-index = binary_search(data, target)
+    # Base case: if start exceeds end, the value is not in the array
+    if start > end:
+        return None  # Return None if the target is not found
+    # Calculate the middle index of the current range
+    mid = (start + end) // 2
+    # If the middle element is the target, return its index
+    if arr[mid] == target:
+        return mid
+    # If the middle element is less than the target, search the right half
+    elif arr[mid] < target:
+        return binary_search(arr, target, mid + 1, end)
+    # If the middle element is greater than the target, search the left half
+    else:
+        return binary_search(arr, target, start, mid - 1)
+# Define an array and a target value
+arr = sorted_small_data
+target = 23
+# Initialize start and end for the search range
+start = 0  # Starting index of the array
+end = len(arr) - 1  # Ending index of the array
+# Calling the binary_search function and storing the result 
+index = binary_search(arr, target, start, end)
+# If index is not None, print the index of the found element, else print "element not found"
 if index is not None:
-    print("Target is ",target,", found at index:", index)
+    print("Element", target, "is present at index", index)
 else:
-    print("Not found")
+    print("Element", target, "is not present in the array.")
 
 
 
-"""Phase 3"""
+# Phase 3
 def generate_sort_data(data):
     if len(data)>1:
+        odd_ind = []
+        even_ind = []
         ''' Split array into odd and even index parts '''
-        odd_ind = data[1::2] # ODD INDEXES, from 1-end, with step 2 (skipping the even indexes)
-        even_ind = data[::2] # EVEN INDEXES, from beginning-end, with step 2 (skipping the odd indexes)
+        for i in range(0,len(data)):
+            if i%2 == 0:
+                even_ind.append(data[i])
+            else:
+                odd_ind.append(data[i])
         ''' Recursive calls for sorting the odd and even indexes '''
         generate_sort_data(odd_ind) # Split odd indexes
         generate_sort_data(even_ind) # Split even indexes
@@ -120,7 +132,7 @@ print('New Array:', large_data)
 Phase 4:
 This phase searches the sorted dataset from phase 3 using two searching methods and compares their execution time.
 Method 4.1: Linear Search
-Method 4.2: Binary Search, using recursive loops. 
+Method 4.2: Binary Search
 """
 # Phase 4.1 - Linear Search
 def linear_search(target, array):
