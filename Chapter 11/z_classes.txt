@@ -1,0 +1,15 @@
+
+Encapsulation: whatever is inside the __init__ --> self function, incapsulating all of the members and methods inside a class
+
+Methods are also called:
+    Behaviours
+
+Members are also called:
+    States
+    Feild
+    Attribute
+
+An instance of a class is also called an object
+
+A contructor is the __init__ function
+    You can also use a specified constructor, which basically specifying defult memebers for whenever you call the function without parameters
