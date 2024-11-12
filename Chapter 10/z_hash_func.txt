@@ -1,7 +1,14 @@
 /* ------------------------------ HASH ELEMENTS ----------------------------- */
 
-Hashing: creating
+Hashing: transfering any data into the interger ( place in the ), used in disctionaries and sets to make sure '''''' are unique
+for each unique input, a unique output
+Sequence: can be a string, 
 
+When keys are not unique:
+Open Adressing: going to the next available address
+Collision: taking another peice of memory with 2-3 elements for example, and have those elements where each key has its unique index
+
+If there are duplicate values in a sequence that you are converting to set, it will only show one
 Set = { }
     is dictionary without values, no keys
     Sets the values are the keys in dictionaries
@@ -15,6 +22,8 @@ Dictionary = {key : value}
     
 Keys do not have to be numbers, can also be boolean values, and strings...
 
+Set is immutable
+Set cannot be accessed using indexes, you access them by iterating (loops)
 
 To access elements:
 Printing: 
