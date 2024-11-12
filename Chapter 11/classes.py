@@ -59,6 +59,9 @@ print(f'Fruit1 is now {apple.color}')
 # --------------------------- Creating a card class -------------------------- #
 class card:
     ''' Class representation of a solitare card '''
+    
+    __slots__ = ['rank', 'suit', 'name', 'shorthand'] # Only allowed to use these members, otherwise ATTRIBUTE ERROR will occur
+    
     def __init__(self, rank, suit): # Self: automatically passed in
         ''' Members of the '''
         self.rank = rank
@@ -75,3 +78,4 @@ print(a_card.name, a_card.shorthand) # Calling members (the ones not in the argu
 
 b_card = card('K', 'Spades')
 print(b_card.name, b_card.shorthand) # Calling members (the ones not in the argument)
+

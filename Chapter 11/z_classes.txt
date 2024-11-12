@@ -13,3 +13,9 @@ An instance of a class is also called an object
 
 A contructor is the __init__ function
     You can also use a specified constructor, which basically specifying defult memebers for whenever you call the function without parameters
+    Self is with reference, you dont use them if you want to write defult specific memebers unless you want them to not be changed
+
+Slots
+    __slots__=[parameters]
+    This will make sure that whatever the 'parameters' are, that they are the only ones used in the class
+    Restricts the number of memebers
