@@ -1,0 +1,32 @@
+/* ------------------------------ HASH ELEMENTS ----------------------------- */
+
+Hashing: creating
+
+Set = { }
+    is dictionary without values, no keys
+    Sets the values are the keys in dictionaries
+    Sets have to have unique values
+
+
+Dictionary = {key : value}
+    has a key and value
+    Dictionary has unique keys
+    Dictionary time complexity: constant time - O(c)
+    
+Keys do not have to be numbers, can also be boolean values, and strings...
+
+
+To access elements:
+Printing: 
+    print( dict_name[key] )
+
+To access keys:
+    print( dict_name.keys() )
+
+To access a specific key that is a number:
+    for i in dictionary_name.keys()
+       if i == (keyNumber):
+             print(dictionary_name[i]
+       else:
+              
+
