@@ -18,7 +18,7 @@ Set = { }
 Dictionary = {key : value}
     has a key and value
     Dictionary has unique keys
-    Dictionary time complexity: constant time - O(c)
+    Dictionar                y time complexity: constant time - O(c)
     
 Keys do not have to be numbers, can also be boolean values, and strings...
 
