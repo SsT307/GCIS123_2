@@ -11,7 +11,7 @@ l7 = list [7:2:-1] # going backwards
 
 # ------------------------------ sorted acending ----------------------------- #
 list.sort() # In-place, DESTROYING ORIGINAL FUNC
-#print(list)
+# print(list)
 
 # ----------------------------- sorted decending ----------------------------- #
 l_sorted = sorted(list, reverse=True) # Out of place, NOT DESTRUCTIVE
@@ -21,7 +21,7 @@ l_sorted = sorted(list, reverse=True) # Out of place, NOT DESTRUCTIVE
 # ------------------- creating function with its own order ------------------- #
 list_num2 = ['Hello', 'Professor', 'please', 'send', 'HELP!']
 list_num2.sort(key=len) # sorting based on the LENGTH OF THE WORD
-print(list_num2)
+# print(list_num2)
 
 list_num2.sort(key=str.upper) # sorting based off of alphabetical order
 print(list_num2)
