@@ -49,6 +49,8 @@ Queue --> First in, First out {
         front = 'Whatever the element after the one you just took away is' (remember youre taking away the first element when dequeuing)
 }
 
+
+/* ------------------- ignore this, wont come on the test, just if you want to understand ------------------- */
 circular array ---> there is a set size for the circle, and you just keep adding elements to the end of it, 
                     and if two indexes overlap, the array is full, so you dequeue to add more 
     {
