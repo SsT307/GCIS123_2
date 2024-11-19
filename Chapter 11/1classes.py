@@ -1,11 +1,13 @@
 ''''
 Classes: models represented by code, where each variable, contains another variable
+State/Members is what my class contain
+Behavior is what my class does
 '''
 
 # ------------------------- Creating a student class ------------------------- #
 class student:
     '''Class representation of a student'''
-    def __init__(self,name,id,age,major, grades): # The function has to be called __init__, because it initializes the class
+    def __init__(self,name,id,age,major, grades): # The function has to be called __init__, because it initializes the class,  CONSTRUCTOR
         ''' Members of student: '''
         ''' These memebers will apply to the whole class, and not just the function '''
         self.name = name

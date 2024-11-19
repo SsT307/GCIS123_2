@@ -3,3 +3,5 @@
 - How to do merge sort algorithm
 
 - What is time complexity
+
+- DO NOT FORGET __slots__ for final

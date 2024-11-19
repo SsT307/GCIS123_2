@@ -1,0 +1,63 @@
+Data structue: way to store more data in one variable
+
+Why do we use stacks and queues: Time complexity
+
+
+/* ---------------------------------- =STACK= --------------------------------- */
+Stack --> Last in, First out {
+    push: 'adds' an element to the 'top' of a stack
+    pop: 'removes' the 'top'/'last' element from the stack, returns the value of whatever is kicked out so you can SAVE it into a variable
+} {
+    top: 'Whatever was last added to the stack'
+} {
+    When youve just created a stack:
+        size = 0
+        top = None
+    
+    When you add an element to the stack:
+        size = +1
+        top = 'Whatever is added last to the stack'
+        *imp* ps == There should be a 'next' value with each element, so that whenever an element is popped, it knows which element is before it (slide 27) **
+
+} { ## skip recursive data structures (slides 15-24, skip)---> 124 ##
+    '''!!*********PEEKING**********!!'''
+    Returns the top element, without popping it, basically if you just want the top element
+}
+
+
+
+/* ---------------------------------- =QUEUE= --------------------------------- */
+Queue --> First in, First out {
+    enqueue: 'add' to the 'back' of the queue
+    dequeue: 'taking' away from the 'top/front' of the queue
+} {
+    back: 'Whatever was last added to the stack'
+    front: 'Whatever was added first to the stack'
+} {
+    When youve just created a queue:
+        size = 0
+        back = last element in the queue
+        front = first element in the queue
+    
+    When you add an element to a queue:
+        size = +1
+        back = 'Whatever element you just added'
+        front = The same
+    When you remove an element to a queue:
+        size = -1
+        back = 'Last element'
+        front = 'Whatever the element after the one you just took away is' (remember youre taking away the first element when dequeuing)
+}
+
+circular array ---> there is a set size for the circle, and you just keep adding elements to the end of it, 
+                    and if two indexes overlap, the array is full, so you dequeue to add more 
+    {
+    first: 'the first element'
+    last: 'the empty array after the last element is added'
+} {
+    append until the array is full, then pop the first element/dequeue, then the last will be the first element, this happens before the last element becomes the first element
+}
+
+
+
+

@@ -45,27 +45,27 @@ class House:
             return False
         
     def __ne__(self, other): # Checking if objects are NOT similar, using "!="
-        return not self.__eq__(other) # Literally dont even need this btw
+        return not self.__eq__(other)
     
-    def __lt__(self, other): # Checking greater than/less than using ">, <, <=, >=", line 64
+    def __lt__(self, other): # Checking less than using ">", line 63
         if self.__no_rooms<other.get_no_rooms():
             return True
         else:
             return False
     
-    def __le__(self, other): # Checking greater than/less than using ">, <, <=, >=", line 64
+    def __le__(self, other): # Checking less than or equal to using ">="
         if self.__no_rooms<=other.get_no_rooms():
             return True
         else:
             return False
     
-    def __gt__(self, other): # Checking greater than/less than using ">, <, <=, >=", line 64
+    def __gt__(self, other): # Checking greater than, than using "<", line 64
         if self.__no_rooms>other.get_no_rooms():
             return True
         else:
             return False
     
-    def __ge__(self, other): # Checking greater than/less than using ">, <, <=, >=", line 64
+    def __ge__(self, other): # Checking greater than or equal to using "<="
         if self.__no_rooms>=other.get_no_rooms():
             return True
         else:
@@ -83,7 +83,7 @@ print(house_a!=house_a) # CALLING THE __ne__ FUNCTION !!!!!!!!!!!!! ------> FALS
 
 house_b = House(3,'GREEN','Mirdif', 'apt')
 print(house_b>house_a) # CALLING THE __lt__ FUNCTION !!!!!!! ------> FALSE
-print(house_b<house_a) # CALLING THE __lt__ FUNCTION !!!!!!! ------> TRUE
+print(house_b<house_a) # CALLING THE __gt__ FUNCTION !!!!!!! ------> TRUE
 
 print(hash(house_a))
 print(hash(house_b))
