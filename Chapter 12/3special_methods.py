@@ -1,3 +1,16 @@
+'''
+Special Methods:
+    - `__init__`: Initializes the object.
+    - `__str__`: Returns a string representation of the object.
+    - `__repr__`: Returns a string representation of the object that could be used to recreate it
+    - `__eq__`: Checks if two objects are equal.
+    - `__ne__`: Checks if the two objects are not equal.
+    - `__lt__`: Checks if one object is less than another.
+    - `__le__`: Checks if one object is less than or equal to another.
+    - `__gt__`: Checks if one object is greater than another.
+    - `__ge__`: Checks if one object is greater than or equal to another.
+'''
+
 class airplane:
     __slots__=['__make', '__type','__no_passengers']
     def __init__(self, make, type, passengers):
@@ -60,4 +73,4 @@ a1 = airplane('Boing', '747', 234)
 a2 = airplane('Boing', '118', 102)
 s = '11643sss'
 print(str(a1))
-print(a1==a1)
+print(a1.__eq__(a2)) # CALLING THE EQ BEHAVIOR IN A DIFFERENT WAY

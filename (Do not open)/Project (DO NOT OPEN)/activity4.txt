@@ -1,3 +1,0 @@
-- check if name == name, side == side
-
-- setters and getters, check if the argument has changed

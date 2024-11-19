@@ -1,16 +1,15 @@
 class Polygon:
+    __slots__ = ['__name','__sides']
     def __init__(self, name, sides):
-        self.name = name
-        self.sides = sides
+        self.__name = name
+        self.__sides = sides
     
     def get_name(self):
-        return self.name
-    
-    def set_name(self, name):
-        self.name = name
+        return self.__name
+    def set_name(self, new_value):
+        self.__name = new_value
     
     def get_sides(self):
-        return self.sides
-    
-    def set_sides(self, sides):
-        self.sides = sides
+        return self.__sides
+    def set_sides(self, new_value):
+        self.__sides = new_value

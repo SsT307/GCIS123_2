@@ -48,9 +48,9 @@ class House2:
         self.__type=type
         
     def get_no_room(self): # Getters / Accessors
-        return self.__address
+        return self.__no_rooms
     def set_no_room(self, new_value): # Setters / Mutators
-        self.__address = new_value
+        self.__no_rooms = new_value
     
     def get_facade_color(self): # Getters / Accessors
         return self.__facade_color
