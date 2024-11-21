@@ -1,7 +1,7 @@
 ''''
 Classes: models represented by code, where each variable, contains another variable
-State/Members is what my class contain
-Behavior is what my class does
+State/Members is what the class contains
+Behavior is what the class does
 '''
 
 # ------------------------- Creating a student class ------------------------- #

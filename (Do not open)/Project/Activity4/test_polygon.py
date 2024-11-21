@@ -1,5 +1,13 @@
 from polygon import Polygon
 
+'''
+Test for negative
+Zeroes
+test setters
+
+'''
+
+
 def test_polygon_initialization():
     polygon = Polygon("Triangle", [3, 3, 3])  
     assert polygon.get_name() == "Triangle" 
@@ -9,7 +17,9 @@ def test_set_sides():
     polygon = Polygon("Square", [4, 4, 4, 4])
     polygon.set_sides([5, 5, 5, 5])  
     assert polygon.get_sides() == [5, 5, 5, 5]
-    
+
+
+   
 def __eq__(self, other):
         if type(self) == type(other):
             return self.__name == other.get_name() and self.__sides == other.get_sides()

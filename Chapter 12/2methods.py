@@ -40,7 +40,7 @@ class House:
     
     def __eq__(self, other): # Checking if objects are similar, using "==", check line 49
         if type(self)==type(other):
-            return self.__address==other.get_address() and self.__no_rooms==other.get_no_rooms() and self.__facade_color==other.get_facade_color() and self.__type==other.get_type()
+            return self.get_address()==other.get_address() and self.__no_rooms==other.get_no_rooms() and self.__facade_color==other.get_facade_color() and self.__type==other.get_type()
         else:
             return False
         

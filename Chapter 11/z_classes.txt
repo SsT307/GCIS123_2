@@ -1,5 +1,5 @@
 
-Encapsulation: whatever is inside the __init__ --> self function, incapsulating all of the members and methods inside a class
+Encapsulation: whatever is inside the class --> incapsulating all of the members and methods inside a class
 
 Methods are also called:
     Behaviours

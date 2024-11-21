@@ -1,8 +1,7 @@
 '''
 PPT IS VERY IMPORTANT, LOOK AT IT FOR CHAPTER 12
 Constructor: constructs or creats an object ---> __init__
-self : a referance to the object
-
+self : a reference to the object
 methods: a function that is inside a class
 '''
 
