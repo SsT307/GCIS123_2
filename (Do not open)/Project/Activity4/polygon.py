@@ -16,3 +16,7 @@ class Polygon:
         
     def __str__(self):
         return self.__name + " with sides: " + str(self.__sides)
+
+    def calculate_circumference(self):
+        return sum(self.__sides)
+    

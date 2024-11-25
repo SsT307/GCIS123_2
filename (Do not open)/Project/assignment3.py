@@ -1,9 +1,9 @@
 def m(i):
-    if i <= 0:
-        return 0
+    if (i==0):
+        return
     else:
-        return m((i-1)/(2*(i-1)+1)+i/(2*i+1))
-        
+        return (i/(2*i+1) + m(i-1))
+    
 print(m(3))
 """
 Question 1:
