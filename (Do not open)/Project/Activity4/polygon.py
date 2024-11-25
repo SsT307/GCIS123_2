@@ -13,3 +13,6 @@ class Polygon:
         return self.__sides
     def set_sides(self, new_value):
         self.__sides = new_value
+        
+    def __str__(self):
+        return self.__name + " with sides: " + str(self.__sides)
