@@ -6,7 +6,8 @@ Why do we use stacks and queues: Time complexity
 /* ---------------------------------- =STACK= --------------------------------- */
 Stack --> Last in, First out {
     push: 'adds' an element to the 'top' of a stack
-    pop: 'removes' the 'top'/'last' element from the stack, returns the value of whatever is kicked out so you can SAVE it into a variable
+    pop: 'removes' the 'top'/'last' element from the stack, RETURNS the value of whatever is kicked out so you can SAVE it into a variable
+    peek: returns the last element(top), but does not remove it
 } {
     top: 'Whatever was last added to the stack'
 } {
@@ -49,8 +50,7 @@ Queue --> First in, First out {
         front = 'Whatever the element after the one you just took away is' (remember youre taking away the first element when dequeuing)
 }
 
-
-/* ------------------- ignore this, wont come on the test, just if you want to understand ------------------- */
+# THEORY QUESTIONS ON THIS:
 circular array ---> there is a set size for the circle, and you just keep adding elements to the end of it, 
                     and if two indexes overlap, the array is full, so you dequeue to add more 
     {
