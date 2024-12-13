@@ -1,0 +1,35 @@
+1. ~~
+what is circular cube array  *there can be the same element at the front and back BUT not in tuples
+2. ~~
+explain concept of enqueue and dequeue with examples in circular array and in general
+3. ~~
+enqueue (dequeue()) : removes element from front and add it to the back explain it in circular and normal
+4. ~~
+no coding aspect of enqueue and dequeue in circular
+5. ~~
+merge sort and quick no coding
+6. ~~
+linear sort is only for loop
+7. ~~
+binary sort is recursion
+8. ~~
+insertion sort no guarantee 
+9. ~~
+stacks concept with push, peek and pop no code but how it works
+10. ~~
+pop returns the number is pops, peek returns the top element but does not remove or add
+11. ~~
+for loop concept in stacks
+/* --------------------------------- 12. ~~ --------------------------------- */
+create a class employee with attributes name, id and salary please use slots to limit members, 
+create constructor, getters, setter, eq, ne, str, and hash(multiplying hash of ID with salary). 
+create 5 objects of employee and create a dictionary using only id of employee to store number of days off for each employee
+/* ------------------------------------ - ----------------------------------- */
+13. ~~
+hashing pay attention to dictionary, sets and theoretical part and time complexity 
+/* -------------------------------- 14. ~~ ---------------------------------- */
+write a recursive function named is_palindrome that check whether a given string is a palindrome. 
+a palindrome is a word, phrase or a sequence that reads the same backward and forward (ignoring cases and spaces)
+/* ------------------------------------ - ----------------------------------- */
+15. ~~
+how to get sum, Fibonacci sequence in recursion function and factorial

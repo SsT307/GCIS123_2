@@ -5,7 +5,7 @@ def countdown(num):
     print(num)
     countdown(num-1)
     
-# countdown(3)
+countdown(3)
 
 
 def factorial(num):
@@ -13,7 +13,7 @@ def factorial(num):
         return 1
     return num*factorial(num-1) # going backwards
 
-# print(factorial(4))
+print(factorial(4))
 
 
 # input a base and exponent and the user inputs the base case

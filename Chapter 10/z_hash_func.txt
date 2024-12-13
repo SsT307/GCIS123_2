@@ -6,7 +6,7 @@ Sequence: can be a string,
 
 When keys are not unique:
 Open Adressing: going to the next available address
-Collision: taking another peice of memory with 2-3 elements for example, and have those elements where each key has its unique index
+Chainning: taking another peice of memory with 2-3 elements for example, and have those elements where each key has its unique index
 
 If there are duplicate values in a sequence that you are converting to set, it will only show one
 Set = { }
@@ -18,7 +18,7 @@ Set = { }
 Dictionary = {key : value}
     has a key and value
     Dictionary has unique keys
-    Dictionar                y time complexity: constant time - O(c)
+    Dictionary time complexity: constant time - O(c)
     
 Keys do not have to be numbers, can also be boolean values, and strings...
 

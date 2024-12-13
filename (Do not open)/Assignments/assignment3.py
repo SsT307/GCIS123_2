@@ -4,7 +4,7 @@ def m(i):
     else:
         return (i/(2*i+1) + m(i-1))
     
-# print(m(3))
+print(m(3))
 
 
 
@@ -38,7 +38,7 @@ class Circle:
     def __str__(self): # PART G
         return f"This circle has radius: {self.__radius}"
 
-# PART H 
+"""# PART H 
 c1 = Circle()
 c2 = Circle()
 # PART I
@@ -48,4 +48,4 @@ print(c1.getRadius())
 # PART K
 print(c2)
 # PART L
-print(c2.computeArea())
+print(c2.computeArea())"""

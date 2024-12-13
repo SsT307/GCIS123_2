@@ -1,4 +1,4 @@
-"""#tuple
+#tuple
 t= (2,3,"r",8,"hello",-7)
 print(t) #entire tuple
 
@@ -10,7 +10,6 @@ print(t) #entire tuple
 #t[4]="another one" # will give a type error because tuples arent mutable
 print(t[1]) #3
 
-"""
 #tuple
 t= (2,3,"r",8,"hello",-7)
 print(t[4]) 

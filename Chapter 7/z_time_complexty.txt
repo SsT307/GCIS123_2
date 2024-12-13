@@ -4,4 +4,4 @@
 1 For Loop - o(n)
 
 
-discard half of the array - log2(n)
+discard half of the array - O(log2n)

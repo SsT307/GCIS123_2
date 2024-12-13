@@ -1,5 +1,5 @@
 def add_5_string(x):
-    x = x + 'd'
+    x = str(x) + 'd'
     print(x)
     
 a = 'abc'
@@ -9,10 +9,10 @@ print(a) # Used a as a refrence, meaning that a didnt change
 
 # ---------------------------------- DO THIS --------------------------------- #
 def add_5_array(x):
-    x = x + 'd'
+    x = list(x) + ['d']
     print(x)
     
 l1 = ['a', 'v', 'b', 'k']
-12 = ['e', 'f', 'g', 'l']
+l2 = ['e', 'f', 'g', 'l']
 add_5_array(l1)
 

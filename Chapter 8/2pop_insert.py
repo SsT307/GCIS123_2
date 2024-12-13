@@ -3,11 +3,10 @@ a_list = ['a','b','c','d','e']
 
 '''          POP           '''
 a_list.pop(0) # removes element with index 0 -- QUEUE
-a_list.pop() # removes the last element -- STACK
+x = a_list.pop() # removes the last element -- STACK
 # POP IS BY INDEX
 print(a_list)
-
-
+print(x)
 
 
 # ------ WORK: insert 1 element in the beginning and one second to last ------ #

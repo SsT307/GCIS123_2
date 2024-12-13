@@ -7,7 +7,7 @@ l5 = list[3:9:2] # from 3-8, with step 2
 l6 = list[::2] # from the beginning till the end with step 2
 l7 = list [7:2:-1] # going backwards 
 
-#print(l1)
+print(l5)
 
 # ------------------------------ sorted acending ----------------------------- #
 list.sort() # In-place, DESTROYING ORIGINAL FUNC

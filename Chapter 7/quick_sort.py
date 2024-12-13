@@ -56,6 +56,9 @@ print('Sorted array:', sorted_arr)
 
 '''
 EXPERIMENT TIMEEE: 
+quick sort is faster when you pivot the middle element, and wehn there are less elements, 
+but with more elements, it is faster to pivot the first element
+It is faster to use quick sort on a unsorted list
 # UNSORTED
     # First element
         - 5 elements

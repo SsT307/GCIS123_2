@@ -1,17 +1,17 @@
-# ls1 = [n for n in range(1, 10)]
-# print(ls1)
+ls1 = [n for n in range(1, 10)]
+print(ls1)
 
-# ls2 = [x//2 for x in range(19)] # Floor division with each number till 18
-# print(ls2)
+ls2 = [x//2 for x in range(19)] # Floor division with each number till 18
+print(ls2)
 
-# ls3 = [5 for _ in range(10)] # ten 5's
-# print(ls3)
+ls3 = [5 for _ in range(10)] # ten 5's
+print(ls3)
 
-# ls4 = [q for q in range(10) if q % 2 == 0] # will print anything (divisible by 2)
-# print(ls4)
+ls4 = [q for q in range(10) if q % 2 == 0] # will print anything (divisible by 2)
+print(ls4)
 
-# ls5 = [a+3 for a in range(9)]
-# print(ls5)
+ls5 = [a+3 for a in range(9)]
+print(ls5)
 
 ls6 = [a*10 for a in range(10,100,10) if a%3==0]
 print(ls6)

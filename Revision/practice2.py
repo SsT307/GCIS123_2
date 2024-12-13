@@ -12,4 +12,4 @@ def is_palindrome(phrase):
         else: return False
     return True
         
-print(is_palindrome('anAnana'))
+print(is_palindrome('anAnanana'))

@@ -82,8 +82,8 @@ print(house_a==house_a) # CALLING THE __eq__ FUNCTION !!!!!!!!!!!!! ------> TRUE
 print(house_a!=house_a) # CALLING THE __ne__ FUNCTION !!!!!!!!!!!!! ------> FALSE
 
 house_b = House(3,'GREEN','Mirdif', 'apt')
-print(house_b>house_a) # CALLING THE __lt__ FUNCTION !!!!!!! ------> FALSE
-print(house_b<house_a) # CALLING THE __gt__ FUNCTION !!!!!!! ------> TRUE
+print(house_b.__lt__(house_a)) # CALLING THE __lt__ FUNCTION !!!!!!! ------> FALSE
+print(house_b.__gt__(house_a)) # CALLING THE __gt__ FUNCTION !!!!!!! ------> TRUE
 
 print(hash(house_a))
 print(hash(house_b))
